@@ -17,3 +17,9 @@ docker compose exec app /bin/migrate
 ```bash
 docker compose exec app /bin/mock
 ```
+
+## Test With Postman
+### 1. Import the Postman collection and environment
+```bash
+Sistem manajemen armada.postman_collection.json
+```

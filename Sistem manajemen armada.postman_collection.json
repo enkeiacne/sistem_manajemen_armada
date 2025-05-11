@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "004c2fec-83ee-4a24-aac5-57c4b395f3f0",
+		"name": "Sistem manajemen armada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29047625"
+	},
+	"item": [
+		{
+			"name": "history",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/vehicles/B1234XYZ/location/history?start=1715000000&end=1715009999 &limit=10&page=1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vehicles",
+						"B1234XYZ",
+						"location",
+						"history"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1715000000"
+						},
+						{
+							"key": "end",
+							"value": "1715009999 "
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "last location",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/vehicles/B1234XYZ/location",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vehicles",
+						"B1234XYZ",
+						"location"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
